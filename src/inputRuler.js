@@ -7,7 +7,6 @@ export const text = () => {
 }
 export const required = (_value = '') => {
 	if(_value === ''){
-		console.log('asda')
 		return false
 	}
 	return true
