@@ -6,6 +6,7 @@ import Checkbox from 'components/checkbox'
 import Datepicker from 'components/datepicker'
 import Input from 'components/input'
 import Switch from 'components/switch'
+import Select from 'components/Select'
 
 const components = [
 	Button,
@@ -14,7 +15,8 @@ const components = [
 	Checkbox,
 	Datepicker,
 	Input,
-	Switch
+	Switch,
+	Select
 ]
 
 const install = (vue, options) => {

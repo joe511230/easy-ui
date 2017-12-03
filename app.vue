@@ -57,12 +57,15 @@
 					placeholder="this is placeholder">
 				</eu-input>
 			</p>
-		</eu-module>
+		</eu-module name="switch">
 		<eu-module>
 			<eu-switch v-model="switchtext" value="default switch">
 				<span slot="left">开</span>
 				<span slot="right">关</span>
 			</eu-switch>
+		</eu-module>
+		<eu-module name="select">
+			<eu-select v-model="selectOptions"></eu-select>
 		</eu-module>
 		<eu-module name="datepicker">
 			<eu-datepicker></eu-datepicker>
@@ -80,7 +83,21 @@
 				inputEmail: 'input email',
 				inputNumber: 'input numer',
 				inputLength: 'input length',
-				switchtext: 1
+				switchtext: 1,
+				selectOptions: [
+					{
+						key: 'select 1',
+						value: 1,
+					},
+					{
+						key: 'select 2',
+						value: 2,
+					},
+					{
+						key: 'select 3',
+						value: 3,
+					},
+				]
 			}
 		},
 		methods: {

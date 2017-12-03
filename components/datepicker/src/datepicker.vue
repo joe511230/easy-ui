@@ -34,7 +34,7 @@
 				this.el.style.top = _top + 'px'
 				this.el.style.left = _left + 'px'
 				if(this.el){
-					document.body.append(this.el)
+					document.body.appendChild(this.el)
 				}else{
 					document.body.style.display = 'block'
 				}
